@@ -1,0 +1,1619 @@
+{
+  "sft_steps": {
+    "easy_only": 1500
+  },
+  "steps_per_run": 300,
+  "base_config": {
+    "B": 12,
+    "G": 8,
+    "E": 2,
+    "lr": 0.0003,
+    "alpha": 0.1,
+    "K": 2,
+    "warm_c": 0.2,
+    "eps": 0.2
+  },
+  "methods": {
+    "grpo": {
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "n_seeds": 3,
+      "final_pass_at_1_mean": 0.33,
+      "final_pass_at_1_by_seed": [
+        0.335,
+        0.34,
+        0.315
+      ],
+      "final_pass_at_1_by_tier_mean": {
+        "easy": 0.8250000000000001,
+        "medium": 0.0,
+        "hard": 0.0
+      },
+      "mid_pass_at_1_mean": 0.35000000000000003,
+      "mean_reward_last_50": 0.36000000000000004,
+      "mean_sat_frac": 0.005140726277818587,
+      "mean_miscoverage": null,
+      "mean_band_width": 0.39999999999999997,
+      "prop33_holds_fraction": null,
+      "lemma32_holds_fraction": null
+    },
+    "gspo": {
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "n_seeds": 3,
+      "final_pass_at_1_mean": 0.29833333333333334,
+      "final_pass_at_1_by_seed": [
+        0.285,
+        0.285,
+        0.325
+      ],
+      "final_pass_at_1_by_tier_mean": {
+        "easy": 0.7458333333333332,
+        "medium": 0.0,
+        "hard": 0.0
+      },
+      "mid_pass_at_1_mean": 0.30833333333333335,
+      "mean_reward_last_50": 0.3264583333333333,
+      "mean_sat_frac": 0.0005902777777777778,
+      "mean_miscoverage": 0.0008564814814814814,
+      "mean_band_width": 0.3999999999999999,
+      "prop33_holds_fraction": 1.0,
+      "lemma32_holds_fraction": 1.0
+    },
+    "fspo": {
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "n_seeds": 3,
+      "final_pass_at_1_mean": 0.31666666666666665,
+      "final_pass_at_1_by_seed": [
+        0.32,
+        0.33,
+        0.3
+      ],
+      "final_pass_at_1_by_tier_mean": {
+        "easy": 0.7916666666666666,
+        "medium": 0.0,
+        "hard": 0.0
+      },
+      "mid_pass_at_1_mean": 0.2916666666666667,
+      "mean_reward_last_50": 0.3498611111111111,
+      "mean_sat_frac": 0.0045601851851851845,
+      "mean_miscoverage": 0.006030092592592591,
+      "mean_band_width": 0.1611992066547644,
+      "prop33_holds_fraction": 1.0,
+      "lemma32_holds_fraction": 1.0
+    },
+    "cspo": {
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "n_seeds": 3,
+      "final_pass_at_1_mean": 0.3233333333333333,
+      "final_pass_at_1_by_seed": [
+        0.34,
+        0.325,
+        0.305
+      ],
+      "final_pass_at_1_by_tier_mean": {
+        "easy": 0.8083333333333332,
+        "medium": 0.0,
+        "hard": 0.0
+      },
+      "mid_pass_at_1_mean": 0.31833333333333336,
+      "mean_reward_last_50": 0.36243055555555553,
+      "mean_sat_frac": 0.10072916666666666,
+      "mean_miscoverage": 0.22013888888888888,
+      "mean_band_width": 0.021357109413990414,
+      "prop33_holds_fraction": 1.0,
+      "lemma32_holds_fraction": 1.0,
+      "final_band_by_seed": [
+        [
+          0.9912010760907759,
+          1.0095182310447224
+        ],
+        [
+          0.9966491205258871,
+          1.0045607140814763
+        ],
+        [
+          0.9793734885703661,
+          1.0154142059284246
+        ]
+      ]
+    },
+    "unclipped": {
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "n_seeds": 3,
+      "final_pass_at_1_mean": 0.30666666666666664,
+      "final_pass_at_1_by_seed": [
+        0.29,
+        0.325,
+        0.305
+      ],
+      "final_pass_at_1_by_tier_mean": {
+        "easy": 0.7666666666666666,
+        "medium": 0.0,
+        "hard": 0.0
+      },
+      "mid_pass_at_1_mean": 0.315,
+      "mean_reward_last_50": 0.3397222222222222,
+      "mean_sat_frac": 0.0,
+      "mean_miscoverage": 0.0,
+      "mean_band_width": Infinity,
+      "prop33_holds_fraction": 1.0,
+      "lemma32_holds_fraction": 1.0
+    },
+    "cspo-alpha-0.05": {
+      "seeds": [
+        0,
+        1
+      ],
+      "n_seeds": 2,
+      "final_pass_at_1_mean": 0.32,
+      "final_pass_at_1_by_seed": [
+        0.33,
+        0.31
+      ],
+      "final_pass_at_1_by_tier_mean": {
+        "easy": 0.8,
+        "medium": 0.0,
+        "hard": 0.0
+      },
+      "mid_pass_at_1_mean": 0.3025,
+      "mean_reward_last_50": 0.35625,
+      "mean_sat_frac": 0.054253472222222224,
+      "mean_miscoverage": 0.12013888888888889,
+      "mean_band_width": 0.03927724920917296,
+      "prop33_holds_fraction": 1.0,
+      "lemma32_holds_fraction": 1.0,
+      "final_band_by_seed": [
+        [
+          0.98952707602071,
+          1.0081530917041122
+        ],
+        [
+          0.9796230437876382,
+          1.0184460125932597
+        ]
+      ]
+    },
+    "cspo-alpha-0.2": {
+      "seeds": [
+        0,
+        1
+      ],
+      "n_seeds": 2,
+      "final_pass_at_1_mean": 0.33,
+      "final_pass_at_1_by_seed": [
+        0.325,
+        0.335
+      ],
+      "final_pass_at_1_by_tier_mean": {
+        "easy": 0.825,
+        "medium": 0.0,
+        "hard": 0.0
+      },
+      "mid_pass_at_1_mean": 0.32999999999999996,
+      "mean_reward_last_50": 0.3667708333333333,
+      "mean_sat_frac": 0.17715277777777777,
+      "mean_miscoverage": 0.4166840277777778,
+      "mean_band_width": 0.008139989116765927,
+      "prop33_holds_fraction": 1.0,
+      "lemma32_holds_fraction": 1.0,
+      "final_band_by_seed": [
+        [
+          0.9955280074348686,
+          1.0052846598492542
+        ],
+        [
+          0.9920625517822301,
+          1.0047639521283962
+        ]
+      ]
+    },
+    "cspo-alpha-0.4": {
+      "seeds": [
+        0,
+        1
+      ],
+      "n_seeds": 2,
+      "final_pass_at_1_mean": 0.325,
+      "final_pass_at_1_by_seed": [
+        0.325,
+        0.325
+      ],
+      "final_pass_at_1_by_tier_mean": {
+        "easy": 0.8125,
+        "medium": 0.0,
+        "hard": 0.0
+      },
+      "mid_pass_at_1_mean": 0.325,
+      "mean_reward_last_50": 0.34802083333333333,
+      "mean_sat_frac": 0.27079861111111114,
+      "mean_miscoverage": 0.8008333333333334,
+      "mean_band_width": 0.002174939519037762,
+      "prop33_holds_fraction": 1.0,
+      "lemma32_holds_fraction": 1.0,
+      "final_band_by_seed": [
+        [
+          0.9999996715866414,
+          1.0010276237553293
+        ],
+        [
+          0.9999548120250641,
+          1.0002321850418987
+        ]
+      ]
+    },
+    "cspo-K1": {
+      "seeds": [
+        0,
+        1
+      ],
+      "n_seeds": 2,
+      "final_pass_at_1_mean": 0.345,
+      "final_pass_at_1_by_seed": [
+        0.33,
+        0.36
+      ],
+      "final_pass_at_1_by_tier_mean": {
+        "easy": 0.85625,
+        "medium": 0.007142857142857143,
+        "hard": 0.0
+      },
+      "mid_pass_at_1_mean": 0.3375,
+      "mean_reward_last_50": 0.3642708333333333,
+      "mean_sat_frac": 0.10777777777777778,
+      "mean_miscoverage": 0.23843750000000002,
+      "mean_band_width": 0.021276316315957163,
+      "prop33_holds_fraction": 1.0,
+      "lemma32_holds_fraction": 1.0,
+      "final_band_by_seed": [
+        [
+          0.991937207468365,
+          1.009418774510644
+        ],
+        [
+          0.9979730159970456,
+          1.0026508031541084
+        ]
+      ]
+    },
+    "cspo-K4": {
+      "seeds": [
+        0,
+        1
+      ],
+      "n_seeds": 2,
+      "final_pass_at_1_mean": 0.325,
+      "final_pass_at_1_by_seed": [
+        0.33,
+        0.32
+      ],
+      "final_pass_at_1_by_tier_mean": {
+        "easy": 0.8125,
+        "medium": 0.0,
+        "hard": 0.0
+      },
+      "mid_pass_at_1_mean": 0.3225,
+      "mean_reward_last_50": 0.37187500000000007,
+      "mean_sat_frac": 0.0979513888888889,
+      "mean_miscoverage": 0.21345486111111112,
+      "mean_band_width": 0.02136203247287234,
+      "prop33_holds_fraction": 1.0,
+      "lemma32_holds_fraction": 1.0,
+      "final_band_by_seed": [
+        [
+          0.9928561848901124,
+          1.010983831460439
+        ],
+        [
+          0.9872965676953128,
+          1.0040651762441943
+        ]
+      ]
+    },
+    "cspo-len": {
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "n_seeds": 3,
+      "final_pass_at_1_mean": 0.32666666666666666,
+      "final_pass_at_1_by_seed": [
+        0.35,
+        0.34,
+        0.29
+      ],
+      "final_pass_at_1_by_tier_mean": {
+        "easy": 0.8166666666666668,
+        "medium": 0.0,
+        "hard": 0.0
+      },
+      "mid_pass_at_1_mean": 0.3033333333333333,
+      "mean_reward_last_50": 0.36534722222222227,
+      "mean_sat_frac": 0.11934027777777777,
+      "mean_miscoverage": 0.25988425925925923,
+      "mean_band_width": 0.022721928936963873,
+      "prop33_holds_fraction": 1.0,
+      "lemma32_holds_fraction": 1.0,
+      "miscoverage_by_bucket": [
+        0.25156286710262643,
+        0.25664036108135496,
+        0.2978111027091625
+      ],
+      "final_band_by_seed": [
+        [
+          [
+            0.9743963093570965,
+            1.010120926628192
+          ],
+          [
+            0.9976705519730913,
+            1.0158749305819796
+          ],
+          [
+            0.9963021910424628,
+            1.008094075213774
+          ]
+        ],
+        [
+          [
+            0.9870679021253724,
+            1.0168084514224265
+          ],
+          [
+            0.9892312604987051,
+            1.0032184057459097
+          ],
+          [
+            0.972238416471585,
+            1.0042327249528027
+          ]
+        ],
+        [
+          [
+            0.9624299432808208,
+            1.0129882664979772
+          ],
+          [
+            0.9854091448653293,
+            1.022688314983363
+          ],
+          [
+            0.9721851169630068,
+            1.023602846969996
+          ]
+        ]
+      ]
+    }
+  },
+  "runs": [
+    {
+      "method": "grpo",
+      "seed": 0,
+      "steps": 300,
+      "config": {
+        "B": 12,
+        "G": 8,
+        "E": 2,
+        "lr": 0.0003,
+        "alpha": 0.1,
+        "K": 2,
+        "warm_c": 0.2,
+        "eps": 0.2
+      },
+      "final_pass_at_1": 0.335,
+      "final_pass_at_1_by_tier": {
+        "easy": 0.8375,
+        "medium": 0.0,
+        "hard": 0.0
+      },
+      "mid_pass_at_1": 0.37,
+      "final_mean_length": 6.61,
+      "final_mean_partial_credit": 0.38,
+      "final_band": null,
+      "mean_reward_last_50": 0.33958333333333335,
+      "mean_reward_all": 0.3611111111111111,
+      "mean_entropy_last_50": 0.09892315890755517,
+      "mean_sat_frac": 0.004991055485784319,
+      "mean_miscoverage": null,
+      "miscoverage_by_bucket": null,
+      "mean_band_width": 0.39999999999999997,
+      "mean_band_a": 0.7999999999999999,
+      "mean_band_b": 1.2,
+      "prop33_holds_fraction": null,
+      "prop33_mean_gap": null,
+      "prop33_mean_bound": null,
+      "lemma32_holds_fraction": null,
+      "lemma32_mean_e_w2": null,
+      "lemma32_mean_bound": null
+    },
+    {
+      "method": "grpo",
+      "seed": 1,
+      "steps": 300,
+      "config": {
+        "B": 12,
+        "G": 8,
+        "E": 2,
+        "lr": 0.0003,
+        "alpha": 0.1,
+        "K": 2,
+        "warm_c": 0.2,
+        "eps": 0.2
+      },
+      "final_pass_at_1": 0.34,
+      "final_pass_at_1_by_tier": {
+        "easy": 0.85,
+        "medium": 0.0,
+        "hard": 0.0
+      },
+      "mid_pass_at_1": 0.34,
+      "final_mean_length": 6.66,
+      "final_mean_partial_credit": 0.385,
+      "final_band": null,
+      "mean_reward_last_50": 0.3729166666666666,
+      "mean_reward_all": 0.3467361111111111,
+      "mean_entropy_last_50": 0.0907490246096471,
+      "mean_sat_frac": 0.005432509864807205,
+      "mean_miscoverage": null,
+      "miscoverage_by_bucket": null,
+      "mean_band_width": 0.39999999999999997,
+      "mean_band_a": 0.7999999999999999,
+      "mean_band_b": 1.2,
+      "prop33_holds_fraction": null,
+      "prop33_mean_gap": null,
+      "prop33_mean_bound": null,
+      "lemma32_holds_fraction": null,
+      "lemma32_mean_e_w2": null,
+      "lemma32_mean_bound": null
+    },
+    {
+      "method": "grpo",
+      "seed": 2,
+      "steps": 300,
+      "config": {
+        "B": 12,
+        "G": 8,
+        "E": 2,
+        "lr": 0.0003,
+        "alpha": 0.1,
+        "K": 2,
+        "warm_c": 0.2,
+        "eps": 0.2
+      },
+      "final_pass_at_1": 0.315,
+      "final_pass_at_1_by_tier": {
+        "easy": 0.7875,
+        "medium": 0.0,
+        "hard": 0.0
+      },
+      "mid_pass_at_1": 0.34,
+      "final_mean_length": 6.69,
+      "final_mean_partial_credit": 0.38,
+      "final_band": null,
+      "mean_reward_last_50": 0.36750000000000005,
+      "mean_reward_all": 0.35298611111111117,
+      "mean_entropy_last_50": 0.09322225068958988,
+      "mean_sat_frac": 0.004998613482864238,
+      "mean_miscoverage": null,
+      "miscoverage_by_bucket": null,
+      "mean_band_width": 0.39999999999999997,
+      "mean_band_a": 0.7999999999999999,
+      "mean_band_b": 1.2,
+      "prop33_holds_fraction": null,
+      "prop33_mean_gap": null,
+      "prop33_mean_bound": null,
+      "lemma32_holds_fraction": null,
+      "lemma32_mean_e_w2": null,
+      "lemma32_mean_bound": null
+    },
+    {
+      "method": "gspo",
+      "seed": 0,
+      "steps": 300,
+      "config": {
+        "B": 12,
+        "G": 8,
+        "E": 2,
+        "lr": 0.0003,
+        "alpha": 0.1,
+        "K": 2,
+        "warm_c": 0.2,
+        "eps": 0.2
+      },
+      "final_pass_at_1": 0.285,
+      "final_pass_at_1_by_tier": {
+        "easy": 0.7125,
+        "medium": 0.0,
+        "hard": 0.0
+      },
+      "mid_pass_at_1": 0.33,
+      "final_mean_length": 6.58,
+      "final_mean_partial_credit": 0.36,
+      "final_band": null,
+      "mean_reward_last_50": 0.31375,
+      "mean_reward_all": 0.3374652777777778,
+      "mean_entropy_last_50": 0.09891813636720967,
+      "mean_sat_frac": 0.0005555555555555556,
+      "mean_miscoverage": 0.0010416666666666664,
+      "miscoverage_by_bucket": null,
+      "mean_band_width": 0.3999999999999999,
+      "mean_band_a": 0.7999999999999999,
+      "mean_band_b": 1.2,
+      "prop33_holds_fraction": 1.0,
+      "prop33_mean_gap": 0.00010414596313026791,
+      "prop33_mean_bound": 0.0071740149327730145,
+      "lemma32_holds_fraction": 1.0,
+      "lemma32_mean_e_w2": 0.9976213819724045,
+      "lemma32_mean_bound": 1.8695555555555556
+    },
+    {
+      "method": "gspo",
+      "seed": 1,
+      "steps": 300,
+      "config": {
+        "B": 12,
+        "G": 8,
+        "E": 2,
+        "lr": 0.0003,
+        "alpha": 0.1,
+        "K": 2,
+        "warm_c": 0.2,
+        "eps": 0.2
+      },
+      "final_pass_at_1": 0.285,
+      "final_pass_at_1_by_tier": {
+        "easy": 0.7125,
+        "medium": 0.0,
+        "hard": 0.0
+      },
+      "mid_pass_at_1": 0.325,
+      "final_mean_length": 6.685,
+      "final_mean_partial_credit": 0.39,
+      "final_band": null,
+      "mean_reward_last_50": 0.3441666666666666,
+      "mean_reward_all": 0.33618055555555554,
+      "mean_entropy_last_50": 0.09115385284323883,
+      "mean_sat_frac": 0.0007291666666666667,
+      "mean_miscoverage": 0.0009375,
+      "miscoverage_by_bucket": null,
+      "mean_band_width": 0.3999999999999999,
+      "mean_band_a": 0.7999999999999999,
+      "mean_band_b": 1.2,
+      "prop33_holds_fraction": 1.0,
+      "prop33_mean_gap": 8.212432408005941e-05,
+      "prop33_mean_bound": 0.009059633015937141,
+      "lemma32_holds_fraction": 1.0,
+      "lemma32_mean_e_w2": 0.9981808737392509,
+      "lemma32_mean_bound": 1.8764444444444444
+    },
+    {
+      "method": "gspo",
+      "seed": 2,
+      "steps": 300,
+      "config": {
+        "B": 12,
+        "G": 8,
+        "E": 2,
+        "lr": 0.0003,
+        "alpha": 0.1,
+        "K": 2,
+        "warm_c": 0.2,
+        "eps": 0.2
+      },
+      "final_pass_at_1": 0.325,
+      "final_pass_at_1_by_tier": {
+        "easy": 0.8125,
+        "medium": 0.0,
+        "hard": 0.0
+      },
+      "mid_pass_at_1": 0.27,
+      "final_mean_length": 6.685,
+      "final_mean_partial_credit": 0.375,
+      "final_band": null,
+      "mean_reward_last_50": 0.32145833333333335,
+      "mean_reward_all": 0.329375,
+      "mean_entropy_last_50": 0.10218186906236572,
+      "mean_sat_frac": 0.00048611111111111115,
+      "mean_miscoverage": 0.0005902777777777777,
+      "miscoverage_by_bucket": null,
+      "mean_band_width": 0.3999999999999999,
+      "mean_band_a": 0.7999999999999999,
+      "mean_band_b": 1.2,
+      "prop33_holds_fraction": 1.0,
+      "prop33_mean_gap": 4.490457329459719e-05,
+      "prop33_mean_bound": 0.0050658426889622216,
+      "lemma32_holds_fraction": 1.0,
+      "lemma32_mean_e_w2": 0.9981279382598454,
+      "lemma32_mean_bound": 1.906
+    },
+    {
+      "method": "fspo",
+      "seed": 0,
+      "steps": 300,
+      "config": {
+        "B": 12,
+        "G": 8,
+        "E": 2,
+        "lr": 0.0003,
+        "alpha": 0.1,
+        "K": 2,
+        "warm_c": 0.2,
+        "eps": 0.2
+      },
+      "final_pass_at_1": 0.32,
+      "final_pass_at_1_by_tier": {
+        "easy": 0.8,
+        "medium": 0.0,
+        "hard": 0.0
+      },
+      "mid_pass_at_1": 0.305,
+      "final_mean_length": 6.665,
+      "final_mean_partial_credit": 0.375,
+      "final_band": null,
+      "mean_reward_last_50": 0.3302083333333334,
+      "mean_reward_all": 0.3564583333333333,
+      "mean_entropy_last_50": 0.09914805972265293,
+      "mean_sat_frac": 0.0037152777777777774,
+      "mean_miscoverage": 0.004791666666666666,
+      "miscoverage_by_bucket": null,
+      "mean_band_width": 0.1600349718629561,
+      "mean_band_a": 0.9234597264336484,
+      "mean_band_b": 1.0834946982966045,
+      "prop33_holds_fraction": 1.0,
+      "prop33_mean_gap": 0.00023712516519059905,
+      "prop33_mean_bound": 0.033403441365430324,
+      "lemma32_holds_fraction": 1.0,
+      "lemma32_mean_e_w2": 0.9981751427710871,
+      "lemma32_mean_bound": 1.8637777777777778
+    },
+    {
+      "method": "fspo",
+      "seed": 1,
+      "steps": 300,
+      "config": {
+        "B": 12,
+        "G": 8,
+        "E": 2,
+        "lr": 0.0003,
+        "alpha": 0.1,
+        "K": 2,
+        "warm_c": 0.2,
+        "eps": 0.2
+      },
+      "final_pass_at_1": 0.33,
+      "final_pass_at_1_by_tier": {
+        "easy": 0.825,
+        "medium": 0.0,
+        "hard": 0.0
+      },
+      "mid_pass_at_1": 0.265,
+      "final_mean_length": 6.66,
+      "final_mean_partial_credit": 0.37,
+      "final_band": null,
+      "mean_reward_last_50": 0.36458333333333326,
+      "mean_reward_all": 0.34225694444444443,
+      "mean_entropy_last_50": 0.10042099516445425,
+      "mean_sat_frac": 0.004826388888888889,
+      "mean_miscoverage": 0.0065625,
+      "miscoverage_by_bucket": null,
+      "mean_band_width": 0.16175679868690343,
+      "mean_band_a": 0.9226925887706343,
+      "mean_band_b": 1.0844493874575376,
+      "prop33_holds_fraction": 1.0,
+      "prop33_mean_gap": 0.00020929957946215722,
+      "prop33_mean_bound": 0.048882221596207164,
+      "lemma32_holds_fraction": 1.0,
+      "lemma32_mean_e_w2": 0.9984871625834364,
+      "lemma32_mean_bound": 1.8966190476190476
+    },
+    {
+      "method": "fspo",
+      "seed": 2,
+      "steps": 300,
+      "config": {
+        "B": 12,
+        "G": 8,
+        "E": 2,
+        "lr": 0.0003,
+        "alpha": 0.1,
+        "K": 2,
+        "warm_c": 0.2,
+        "eps": 0.2
+      },
+      "final_pass_at_1": 0.3,
+      "final_pass_at_1_by_tier": {
+        "easy": 0.75,
+        "medium": 0.0,
+        "hard": 0.0
+      },
+      "mid_pass_at_1": 0.305,
+      "final_mean_length": 6.615,
+      "final_mean_partial_credit": 0.37,
+      "final_band": null,
+      "mean_reward_last_50": 0.3547916666666666,
+      "mean_reward_all": 0.3416319444444445,
+      "mean_entropy_last_50": 0.09276483568570017,
+      "mean_sat_frac": 0.005138888888888888,
+      "mean_miscoverage": 0.00673611111111111,
+      "miscoverage_by_bucket": null,
+      "mean_band_width": 0.16180584941443363,
+      "mean_band_a": 0.9226693698930762,
+      "mean_band_b": 1.08447521930751,
+      "prop33_holds_fraction": 1.0,
+      "prop33_mean_gap": 0.0003461147036203696,
+      "prop33_mean_bound": 0.03953321856938712,
+      "lemma32_holds_fraction": 1.0,
+      "lemma32_mean_e_w2": 0.9981968985375367,
+      "lemma32_mean_bound": 1.8968888888888886
+    },
+    {
+      "method": "cspo",
+      "seed": 0,
+      "steps": 300,
+      "config": {
+        "B": 12,
+        "G": 8,
+        "E": 2,
+        "lr": 0.0003,
+        "alpha": 0.1,
+        "K": 2,
+        "warm_c": 0.2,
+        "eps": 0.2
+      },
+      "final_pass_at_1": 0.34,
+      "final_pass_at_1_by_tier": {
+        "easy": 0.85,
+        "medium": 0.0,
+        "hard": 0.0
+      },
+      "mid_pass_at_1": 0.36,
+      "final_mean_length": 6.7,
+      "final_mean_partial_credit": 0.385,
+      "final_band": [
+        0.9912010760907759,
+        1.0095182310447224
+      ],
+      "mean_reward_last_50": 0.3502083333333333,
+      "mean_reward_all": 0.36204861111111114,
+      "mean_entropy_last_50": 0.09367264341478446,
+      "mean_sat_frac": 0.09770833333333333,
+      "mean_miscoverage": 0.22100694444444444,
+      "miscoverage_by_bucket": null,
+      "mean_band_width": 0.020789369615577608,
+      "mean_band_a": 0.9878749376215334,
+      "mean_band_b": 1.008664307237111,
+      "prop33_holds_fraction": 1.0,
+      "prop33_mean_gap": 0.002202911089059935,
+      "prop33_mean_bound": 1.5089051253412764,
+      "lemma32_holds_fraction": 1.0,
+      "lemma32_mean_e_w2": 0.9981938724711252,
+      "lemma32_mean_bound": 1.872111111111111
+    },
+    {
+      "method": "cspo",
+      "seed": 1,
+      "steps": 300,
+      "config": {
+        "B": 12,
+        "G": 8,
+        "E": 2,
+        "lr": 0.0003,
+        "alpha": 0.1,
+        "K": 2,
+        "warm_c": 0.2,
+        "eps": 0.2
+      },
+      "final_pass_at_1": 0.325,
+      "final_pass_at_1_by_tier": {
+        "easy": 0.8125,
+        "medium": 0.0,
+        "hard": 0.0
+      },
+      "mid_pass_at_1": 0.285,
+      "final_mean_length": 6.66,
+      "final_mean_partial_credit": 0.38,
+      "final_band": [
+        0.9966491205258871,
+        1.0045607140814763
+      ],
+      "mean_reward_last_50": 0.37479166666666663,
+      "mean_reward_all": 0.3602430555555555,
+      "mean_entropy_last_50": 0.08461868170865819,
+      "mean_sat_frac": 0.09833333333333334,
+      "mean_miscoverage": 0.21604166666666666,
+      "miscoverage_by_bucket": null,
+      "mean_band_width": 0.02133411519184529,
+      "mean_band_a": 0.9875767399612975,
+      "mean_band_b": 1.0089108551531427,
+      "prop33_holds_fraction": 1.0,
+      "prop33_mean_gap": 0.0022772024985291345,
+      "prop33_mean_bound": 1.493532527816044,
+      "lemma32_holds_fraction": 1.0,
+      "lemma32_mean_e_w2": 0.9981551377420513,
+      "lemma32_mean_bound": 1.8724444444444446
+    },
+    {
+      "method": "cspo",
+      "seed": 2,
+      "steps": 300,
+      "config": {
+        "B": 12,
+        "G": 8,
+        "E": 2,
+        "lr": 0.0003,
+        "alpha": 0.1,
+        "K": 2,
+        "warm_c": 0.2,
+        "eps": 0.2
+      },
+      "final_pass_at_1": 0.305,
+      "final_pass_at_1_by_tier": {
+        "easy": 0.7625,
+        "medium": 0.0,
+        "hard": 0.0
+      },
+      "mid_pass_at_1": 0.31,
+      "final_mean_length": 6.715,
+      "final_mean_partial_credit": 0.385,
+      "final_band": [
+        0.9793734885703661,
+        1.0154142059284246
+      ],
+      "mean_reward_last_50": 0.36229166666666673,
+      "mean_reward_all": 0.34958333333333336,
+      "mean_entropy_last_50": 0.09438640141868523,
+      "mean_sat_frac": 0.10614583333333333,
+      "mean_miscoverage": 0.22336805555555558,
+      "miscoverage_by_bucket": null,
+      "mean_band_width": 0.021947843434548354,
+      "mean_band_a": 0.9871332715841933,
+      "mean_band_b": 1.0090811150187415,
+      "prop33_holds_fraction": 1.0,
+      "prop33_mean_gap": 0.0022866855741760735,
+      "prop33_mean_bound": 1.5218480210064944,
+      "lemma32_holds_fraction": 1.0,
+      "lemma32_mean_e_w2": 0.9978193266784036,
+      "lemma32_mean_bound": 1.8603333333333334
+    },
+    {
+      "method": "unclipped",
+      "seed": 0,
+      "steps": 300,
+      "config": {
+        "B": 12,
+        "G": 8,
+        "E": 2,
+        "lr": 0.0003,
+        "alpha": 0.1,
+        "K": 2,
+        "warm_c": 0.2,
+        "eps": 0.2
+      },
+      "final_pass_at_1": 0.29,
+      "final_pass_at_1_by_tier": {
+        "easy": 0.725,
+        "medium": 0.0,
+        "hard": 0.0
+      },
+      "mid_pass_at_1": 0.33,
+      "final_mean_length": 6.78,
+      "final_mean_partial_credit": 0.38,
+      "final_band": null,
+      "mean_reward_last_50": 0.32375,
+      "mean_reward_all": 0.3388541666666667,
+      "mean_entropy_last_50": 0.10136946359461012,
+      "mean_sat_frac": 0.0,
+      "mean_miscoverage": 0.0,
+      "miscoverage_by_bucket": null,
+      "mean_band_width": Infinity,
+      "mean_band_a": 0.0,
+      "mean_band_b": Infinity,
+      "prop33_holds_fraction": 1.0,
+      "prop33_mean_gap": 0.0,
+      "prop33_mean_bound": 0.0,
+      "lemma32_holds_fraction": 1.0,
+      "lemma32_mean_e_w2": 0.9977687177427642,
+      "lemma32_mean_bound": 1.8656666666666664
+    },
+    {
+      "method": "unclipped",
+      "seed": 1,
+      "steps": 300,
+      "config": {
+        "B": 12,
+        "G": 8,
+        "E": 2,
+        "lr": 0.0003,
+        "alpha": 0.1,
+        "K": 2,
+        "warm_c": 0.2,
+        "eps": 0.2
+      },
+      "final_pass_at_1": 0.325,
+      "final_pass_at_1_by_tier": {
+        "easy": 0.8125,
+        "medium": 0.0,
+        "hard": 0.0
+      },
+      "mid_pass_at_1": 0.335,
+      "final_mean_length": 6.595,
+      "final_mean_partial_credit": 0.4,
+      "final_band": null,
+      "mean_reward_last_50": 0.34520833333333334,
+      "mean_reward_all": 0.34052083333333333,
+      "mean_entropy_last_50": 0.08984112640452992,
+      "mean_sat_frac": 0.0,
+      "mean_miscoverage": 0.0,
+      "miscoverage_by_bucket": null,
+      "mean_band_width": Infinity,
+      "mean_band_a": 0.0,
+      "mean_band_b": Infinity,
+      "prop33_holds_fraction": 1.0,
+      "prop33_mean_gap": 0.0,
+      "prop33_mean_bound": 0.0,
+      "lemma32_holds_fraction": 1.0,
+      "lemma32_mean_e_w2": 0.9980810887558801,
+      "lemma32_mean_bound": 1.8505555555555555
+    },
+    {
+      "method": "unclipped",
+      "seed": 2,
+      "steps": 300,
+      "config": {
+        "B": 12,
+        "G": 8,
+        "E": 2,
+        "lr": 0.0003,
+        "alpha": 0.1,
+        "K": 2,
+        "warm_c": 0.2,
+        "eps": 0.2
+      },
+      "final_pass_at_1": 0.305,
+      "final_pass_at_1_by_tier": {
+        "easy": 0.7625,
+        "medium": 0.0,
+        "hard": 0.0
+      },
+      "mid_pass_at_1": 0.28,
+      "final_mean_length": 6.66,
+      "final_mean_partial_credit": 0.375,
+      "final_band": null,
+      "mean_reward_last_50": 0.3502083333333333,
+      "mean_reward_all": 0.33336805555555554,
+      "mean_entropy_last_50": 0.09205817796304494,
+      "mean_sat_frac": 0.0,
+      "mean_miscoverage": 0.0,
+      "miscoverage_by_bucket": null,
+      "mean_band_width": Infinity,
+      "mean_band_a": 0.0,
+      "mean_band_b": Infinity,
+      "prop33_holds_fraction": 1.0,
+      "prop33_mean_gap": 0.0,
+      "prop33_mean_bound": 0.0,
+      "lemma32_holds_fraction": 1.0,
+      "lemma32_mean_e_w2": 0.9983474638996344,
+      "lemma32_mean_bound": 1.8985555555555553
+    },
+    {
+      "method": "cspo-alpha-0.05",
+      "seed": 0,
+      "steps": 300,
+      "config": {
+        "B": 12,
+        "G": 8,
+        "E": 2,
+        "lr": 0.0003,
+        "alpha": 0.05,
+        "K": 2,
+        "warm_c": 0.2,
+        "eps": 0.2
+      },
+      "final_pass_at_1": 0.33,
+      "final_pass_at_1_by_tier": {
+        "easy": 0.825,
+        "medium": 0.0,
+        "hard": 0.0
+      },
+      "mid_pass_at_1": 0.33,
+      "final_mean_length": 6.72,
+      "final_mean_partial_credit": 0.385,
+      "final_band": [
+        0.98952707602071,
+        1.0081530917041122
+      ],
+      "mean_reward_last_50": 0.34958333333333336,
+      "mean_reward_all": 0.3590625,
+      "mean_entropy_last_50": 0.09124666287177492,
+      "mean_sat_frac": 0.05371527777777777,
+      "mean_miscoverage": 0.11902777777777779,
+      "miscoverage_by_bucket": null,
+      "mean_band_width": 0.03760691992993702,
+      "mean_band_a": 0.9776450088181078,
+      "mean_band_b": 1.015251928748045,
+      "prop33_holds_fraction": 1.0,
+      "prop33_mean_gap": 0.0012004160087920254,
+      "prop33_mean_bound": 1.0003560469050359,
+      "lemma32_holds_fraction": 1.0,
+      "lemma32_mean_e_w2": 0.998245672795133,
+      "lemma32_mean_bound": 1.8738888888888887
+    },
+    {
+      "method": "cspo-alpha-0.05",
+      "seed": 1,
+      "steps": 300,
+      "config": {
+        "B": 12,
+        "G": 8,
+        "E": 2,
+        "lr": 0.0003,
+        "alpha": 0.05,
+        "K": 2,
+        "warm_c": 0.2,
+        "eps": 0.2
+      },
+      "final_pass_at_1": 0.31,
+      "final_pass_at_1_by_tier": {
+        "easy": 0.775,
+        "medium": 0.0,
+        "hard": 0.0
+      },
+      "mid_pass_at_1": 0.275,
+      "final_mean_length": 6.68,
+      "final_mean_partial_credit": 0.38,
+      "final_band": [
+        0.9796230437876382,
+        1.0184460125932597
+      ],
+      "mean_reward_last_50": 0.36291666666666667,
+      "mean_reward_all": 0.3523611111111111,
+      "mean_entropy_last_50": 0.09063619270299625,
+      "mean_sat_frac": 0.05479166666666667,
+      "mean_miscoverage": 0.12125,
+      "miscoverage_by_bucket": null,
+      "mean_band_width": 0.04094757848840889,
+      "mean_band_a": 0.9748366177747478,
+      "mean_band_b": 1.0157841962631566,
+      "prop33_holds_fraction": 1.0,
+      "prop33_mean_gap": 0.0012826670786757937,
+      "prop33_mean_bound": 1.0069166319023268,
+      "lemma32_holds_fraction": 1.0,
+      "lemma32_mean_e_w2": 0.9977839065619346,
+      "lemma32_mean_bound": 1.8733333333333333
+    },
+    {
+      "method": "cspo-alpha-0.2",
+      "seed": 0,
+      "steps": 300,
+      "config": {
+        "B": 12,
+        "G": 8,
+        "E": 2,
+        "lr": 0.0003,
+        "alpha": 0.2,
+        "K": 2,
+        "warm_c": 0.2,
+        "eps": 0.2
+      },
+      "final_pass_at_1": 0.325,
+      "final_pass_at_1_by_tier": {
+        "easy": 0.8125,
+        "medium": 0.0,
+        "hard": 0.0
+      },
+      "mid_pass_at_1": 0.36,
+      "final_mean_length": 6.72,
+      "final_mean_partial_credit": 0.37,
+      "final_band": [
+        0.9955280074348686,
+        1.0052846598492542
+      ],
+      "mean_reward_last_50": 0.3449999999999999,
+      "mean_reward_all": 0.3702083333333333,
+      "mean_entropy_last_50": 0.09573127164981407,
+      "mean_sat_frac": 0.17559027777777778,
+      "mean_miscoverage": 0.4109027777777778,
+      "miscoverage_by_bucket": null,
+      "mean_band_width": 0.008175372288885945,
+      "mean_band_a": 0.9957428240821601,
+      "mean_band_b": 1.0039181963710457,
+      "prop33_holds_fraction": 1.0,
+      "prop33_mean_gap": 0.0029841972204101954,
+      "prop33_mean_bound": 2.26658819100552,
+      "lemma32_holds_fraction": 1.0,
+      "lemma32_mean_e_w2": 0.9982286897048276,
+      "lemma32_mean_bound": 1.865111111111111
+    },
+    {
+      "method": "cspo-alpha-0.2",
+      "seed": 1,
+      "steps": 300,
+      "config": {
+        "B": 12,
+        "G": 8,
+        "E": 2,
+        "lr": 0.0003,
+        "alpha": 0.2,
+        "K": 2,
+        "warm_c": 0.2,
+        "eps": 0.2
+      },
+      "final_pass_at_1": 0.335,
+      "final_pass_at_1_by_tier": {
+        "easy": 0.8375,
+        "medium": 0.0,
+        "hard": 0.0
+      },
+      "mid_pass_at_1": 0.3,
+      "final_mean_length": 6.75,
+      "final_mean_partial_credit": 0.39,
+      "final_band": [
+        0.9920625517822301,
+        1.0047639521283962
+      ],
+      "mean_reward_last_50": 0.38854166666666673,
+      "mean_reward_all": 0.3617708333333333,
+      "mean_entropy_last_50": 0.09093698015909346,
+      "mean_sat_frac": 0.17871527777777776,
+      "mean_miscoverage": 0.4224652777777778,
+      "miscoverage_by_bucket": null,
+      "mean_band_width": 0.00810460594464591,
+      "mean_band_a": 0.9956159784584345,
+      "mean_band_b": 1.0037205844030803,
+      "prop33_holds_fraction": 1.0,
+      "prop33_mean_gap": 0.003086748730090787,
+      "prop33_mean_bound": 2.312160028435235,
+      "lemma32_holds_fraction": 1.0,
+      "lemma32_mean_e_w2": 0.9982242171341509,
+      "lemma32_mean_bound": 1.8847777777777777
+    },
+    {
+      "method": "cspo-alpha-0.4",
+      "seed": 0,
+      "steps": 300,
+      "config": {
+        "B": 12,
+        "G": 8,
+        "E": 2,
+        "lr": 0.0003,
+        "alpha": 0.4,
+        "K": 2,
+        "warm_c": 0.2,
+        "eps": 0.2
+      },
+      "final_pass_at_1": 0.325,
+      "final_pass_at_1_by_tier": {
+        "easy": 0.8125,
+        "medium": 0.0,
+        "hard": 0.0
+      },
+      "mid_pass_at_1": 0.33,
+      "final_mean_length": 6.71,
+      "final_mean_partial_credit": 0.385,
+      "final_band": [
+        0.9999996715866414,
+        1.0010276237553293
+      ],
+      "mean_reward_last_50": 0.343125,
+      "mean_reward_all": 0.3586111111111111,
+      "mean_entropy_last_50": 0.09988657350308465,
+      "mean_sat_frac": 0.2703819444444444,
+      "mean_miscoverage": 0.8001736111111112,
+      "miscoverage_by_bucket": null,
+      "mean_band_width": 0.0021930922411903396,
+      "mean_band_a": 0.998978560643662,
+      "mean_band_b": 1.0011716528848524,
+      "prop33_holds_fraction": 1.0,
+      "prop33_mean_gap": 0.0037628112666320186,
+      "prop33_mean_bound": 3.532195827161303,
+      "lemma32_holds_fraction": 1.0,
+      "lemma32_mean_e_w2": 0.9980474294291664,
+      "lemma32_mean_bound": 1.8661111111111108
+    },
+    {
+      "method": "cspo-alpha-0.4",
+      "seed": 1,
+      "steps": 300,
+      "config": {
+        "B": 12,
+        "G": 8,
+        "E": 2,
+        "lr": 0.0003,
+        "alpha": 0.4,
+        "K": 2,
+        "warm_c": 0.2,
+        "eps": 0.2
+      },
+      "final_pass_at_1": 0.325,
+      "final_pass_at_1_by_tier": {
+        "easy": 0.8125,
+        "medium": 0.0,
+        "hard": 0.0
+      },
+      "mid_pass_at_1": 0.32,
+      "final_mean_length": 6.71,
+      "final_mean_partial_credit": 0.39,
+      "final_band": [
+        0.9999548120250641,
+        1.0002321850418987
+      ],
+      "mean_reward_last_50": 0.35291666666666666,
+      "mean_reward_all": 0.3556944444444444,
+      "mean_entropy_last_50": 0.09798803057515718,
+      "mean_sat_frac": 0.2712152777777778,
+      "mean_miscoverage": 0.8014930555555556,
+      "miscoverage_by_bucket": null,
+      "mean_band_width": 0.002156786796885184,
+      "mean_band_a": 0.9990048336534939,
+      "mean_band_b": 1.001161620450379,
+      "prop33_holds_fraction": 1.0,
+      "prop33_mean_gap": 0.003762098183671619,
+      "prop33_mean_bound": 3.5229839550198374,
+      "lemma32_holds_fraction": 1.0,
+      "lemma32_mean_e_w2": 0.9979284921669709,
+      "lemma32_mean_bound": 1.8502222222222224
+    },
+    {
+      "method": "cspo-K1",
+      "seed": 0,
+      "steps": 300,
+      "config": {
+        "B": 12,
+        "G": 8,
+        "E": 2,
+        "lr": 0.0003,
+        "alpha": 0.1,
+        "K": 1,
+        "warm_c": 0.2,
+        "eps": 0.2
+      },
+      "final_pass_at_1": 0.33,
+      "final_pass_at_1_by_tier": {
+        "easy": 0.825,
+        "medium": 0.0,
+        "hard": 0.0
+      },
+      "mid_pass_at_1": 0.345,
+      "final_mean_length": 6.68,
+      "final_mean_partial_credit": 0.39,
+      "final_band": [
+        0.991937207468365,
+        1.009418774510644
+      ],
+      "mean_reward_last_50": 0.35125,
+      "mean_reward_all": 0.3646527777777778,
+      "mean_entropy_last_50": 0.09068491796139239,
+      "mean_sat_frac": 0.11173611111111109,
+      "mean_miscoverage": 0.23993055555555556,
+      "miscoverage_by_bucket": null,
+      "mean_band_width": 0.020534020228646893,
+      "mean_band_a": 0.9877097606102933,
+      "mean_band_b": 1.0082437808389402,
+      "prop33_holds_fraction": 1.0,
+      "prop33_mean_gap": 0.0022179716128300705,
+      "prop33_mean_bound": 1.5801201112493455,
+      "lemma32_holds_fraction": 1.0,
+      "lemma32_mean_e_w2": 0.9978078360848021,
+      "lemma32_mean_bound": 1.8672222222222221
+    },
+    {
+      "method": "cspo-K1",
+      "seed": 1,
+      "steps": 300,
+      "config": {
+        "B": 12,
+        "G": 8,
+        "E": 2,
+        "lr": 0.0003,
+        "alpha": 0.1,
+        "K": 1,
+        "warm_c": 0.2,
+        "eps": 0.2
+      },
+      "final_pass_at_1": 0.36,
+      "final_pass_at_1_by_tier": {
+        "easy": 0.8875,
+        "medium": 0.014285714285714285,
+        "hard": 0.0
+      },
+      "mid_pass_at_1": 0.33,
+      "final_mean_length": 6.685,
+      "final_mean_partial_credit": 0.38,
+      "final_band": [
+        0.9979730159970456,
+        1.0026508031541084
+      ],
+      "mean_reward_last_50": 0.37729166666666664,
+      "mean_reward_all": 0.35673611111111114,
+      "mean_entropy_last_50": 0.09199856765614883,
+      "mean_sat_frac": 0.10381944444444445,
+      "mean_miscoverage": 0.23694444444444449,
+      "miscoverage_by_bucket": null,
+      "mean_band_width": 0.022018612403267433,
+      "mean_band_a": 0.9869028504808686,
+      "mean_band_b": 1.008921462884136,
+      "prop33_holds_fraction": 1.0,
+      "prop33_mean_gap": 0.0020945637816811016,
+      "prop33_mean_bound": 1.5820938543515888,
+      "lemma32_holds_fraction": 1.0,
+      "lemma32_mean_e_w2": 0.998148280340512,
+      "lemma32_mean_bound": 1.8878412698412699
+    },
+    {
+      "method": "cspo-K4",
+      "seed": 0,
+      "steps": 300,
+      "config": {
+        "B": 12,
+        "G": 8,
+        "E": 2,
+        "lr": 0.0003,
+        "alpha": 0.1,
+        "K": 4,
+        "warm_c": 0.2,
+        "eps": 0.2
+      },
+      "final_pass_at_1": 0.33,
+      "final_pass_at_1_by_tier": {
+        "easy": 0.825,
+        "medium": 0.0,
+        "hard": 0.0
+      },
+      "mid_pass_at_1": 0.34,
+      "final_mean_length": 6.685,
+      "final_mean_partial_credit": 0.385,
+      "final_band": [
+        0.9928561848901124,
+        1.010983831460439
+      ],
+      "mean_reward_last_50": 0.356875,
+      "mean_reward_all": 0.366875,
+      "mean_entropy_last_50": 0.09511488038782266,
+      "mean_sat_frac": 0.0978125,
+      "mean_miscoverage": 0.21315972222222224,
+      "miscoverage_by_bucket": null,
+      "mean_band_width": 0.02127896345685588,
+      "mean_band_a": 0.9875782861390512,
+      "mean_band_b": 1.0088572495959072,
+      "prop33_holds_fraction": 1.0,
+      "prop33_mean_gap": 0.002134495708112569,
+      "prop33_mean_bound": 1.48394254279033,
+      "lemma32_holds_fraction": 1.0,
+      "lemma32_mean_e_w2": 0.9982434569936015,
+      "lemma32_mean_bound": 1.8719999999999997
+    },
+    {
+      "method": "cspo-K4",
+      "seed": 1,
+      "steps": 300,
+      "config": {
+        "B": 12,
+        "G": 8,
+        "E": 2,
+        "lr": 0.0003,
+        "alpha": 0.1,
+        "K": 4,
+        "warm_c": 0.2,
+        "eps": 0.2
+      },
+      "final_pass_at_1": 0.32,
+      "final_pass_at_1_by_tier": {
+        "easy": 0.8,
+        "medium": 0.0,
+        "hard": 0.0
+      },
+      "mid_pass_at_1": 0.305,
+      "final_mean_length": 6.67,
+      "final_mean_partial_credit": 0.38,
+      "final_band": [
+        0.9872965676953128,
+        1.0040651762441943
+      ],
+      "mean_reward_last_50": 0.3868750000000001,
+      "mean_reward_all": 0.3542708333333333,
+      "mean_entropy_last_50": 0.09020437940392466,
+      "mean_sat_frac": 0.09809027777777779,
+      "mean_miscoverage": 0.21375,
+      "miscoverage_by_bucket": null,
+      "mean_band_width": 0.021445101488888802,
+      "mean_band_a": 0.9873935857247599,
+      "mean_band_b": 1.0088386872136488,
+      "prop33_holds_fraction": 1.0,
+      "prop33_mean_gap": 0.002093222061621905,
+      "prop33_mean_bound": 1.4936593195503804,
+      "lemma32_holds_fraction": 1.0,
+      "lemma32_mean_e_w2": 0.9981166494094954,
+      "lemma32_mean_bound": 1.8897777777777776
+    },
+    {
+      "method": "cspo-len",
+      "seed": 0,
+      "steps": 300,
+      "config": {
+        "B": 12,
+        "G": 8,
+        "E": 2,
+        "lr": 0.0003,
+        "alpha": 0.1,
+        "K": 2,
+        "warm_c": 0.2,
+        "eps": 0.2
+      },
+      "final_pass_at_1": 0.35,
+      "final_pass_at_1_by_tier": {
+        "easy": 0.875,
+        "medium": 0.0,
+        "hard": 0.0
+      },
+      "mid_pass_at_1": 0.3,
+      "final_mean_length": 6.7,
+      "final_mean_partial_credit": 0.395,
+      "final_band": [
+        [
+          0.9743963093570965,
+          1.010120926628192
+        ],
+        [
+          0.9976705519730913,
+          1.0158749305819796
+        ],
+        [
+          0.9963021910424628,
+          1.008094075213774
+        ]
+      ],
+      "mean_reward_last_50": 0.3427083333333333,
+      "mean_reward_all": 0.36329861111111106,
+      "mean_entropy_last_50": 0.09345787931264399,
+      "mean_sat_frac": 0.11850694444444443,
+      "mean_miscoverage": 0.26069444444444445,
+      "miscoverage_by_bucket": [
+        0.254798976118039,
+        0.25545968770060185,
+        0.29714398130016906
+      ],
+      "mean_band_width": 0.022513161914979984,
+      "mean_band_a": 0.9862897023863402,
+      "mean_band_b": 1.0088028643013203,
+      "prop33_holds_fraction": 1.0,
+      "prop33_mean_gap": 0.00229782349338976,
+      "prop33_mean_bound": 1.6846388499677827,
+      "lemma32_holds_fraction": 1.0,
+      "lemma32_mean_e_w2": 0.9979664464149279,
+      "lemma32_mean_bound": 1.8603333333333334
+    },
+    {
+      "method": "cspo-len",
+      "seed": 1,
+      "steps": 300,
+      "config": {
+        "B": 12,
+        "G": 8,
+        "E": 2,
+        "lr": 0.0003,
+        "alpha": 0.1,
+        "K": 2,
+        "warm_c": 0.2,
+        "eps": 0.2
+      },
+      "final_pass_at_1": 0.34,
+      "final_pass_at_1_by_tier": {
+        "easy": 0.85,
+        "medium": 0.0,
+        "hard": 0.0
+      },
+      "mid_pass_at_1": 0.315,
+      "final_mean_length": 6.68,
+      "final_mean_partial_credit": 0.395,
+      "final_band": [
+        [
+          0.9870679021253724,
+          1.0168084514224265
+        ],
+        [
+          0.9892312604987051,
+          1.0032184057459097
+        ],
+        [
+          0.972238416471585,
+          1.0042327249528027
+        ]
+      ],
+      "mean_reward_last_50": 0.3852083333333334,
+      "mean_reward_all": 0.3600347222222222,
+      "mean_entropy_last_50": 0.0904438257949848,
+      "mean_sat_frac": 0.120625,
+      "mean_miscoverage": 0.26069444444444445,
+      "miscoverage_by_bucket": [
+        0.24264006548129438,
+        0.27181331013873905,
+        0.30380902139715826
+      ],
+      "mean_band_width": 0.023487626975101605,
+      "mean_band_a": 0.9854777793268817,
+      "mean_band_b": 1.0089654063019835,
+      "prop33_holds_fraction": 1.0,
+      "prop33_mean_gap": 0.002297393506585417,
+      "prop33_mean_bound": 1.6837401085120105,
+      "lemma32_holds_fraction": 1.0,
+      "lemma32_mean_e_w2": 0.9980787331994784,
+      "lemma32_mean_bound": 1.8461746031746027
+    },
+    {
+      "method": "cspo-len",
+      "seed": 2,
+      "steps": 300,
+      "config": {
+        "B": 12,
+        "G": 8,
+        "E": 2,
+        "lr": 0.0003,
+        "alpha": 0.1,
+        "K": 2,
+        "warm_c": 0.2,
+        "eps": 0.2
+      },
+      "final_pass_at_1": 0.29,
+      "final_pass_at_1_by_tier": {
+        "easy": 0.725,
+        "medium": 0.0,
+        "hard": 0.0
+      },
+      "mid_pass_at_1": 0.295,
+      "final_mean_length": 6.73,
+      "final_mean_partial_credit": 0.37,
+      "final_band": [
+        [
+          0.9624299432808208,
+          1.0129882664979772
+        ],
+        [
+          0.9854091448653293,
+          1.022688314983363
+        ],
+        [
+          0.9721851169630068,
+          1.023602846969996
+        ]
+      ],
+      "mean_reward_last_50": 0.3681250000000001,
+      "mean_reward_all": 0.34520833333333334,
+      "mean_entropy_last_50": 0.09323155201570373,
+      "mean_sat_frac": 0.11888888888888888,
+      "mean_miscoverage": 0.2582638888888889,
+      "miscoverage_by_bucket": [
+        0.2572495597085459,
+        0.2426480854047239,
+        0.2924803054301602
+      ],
+      "mean_band_width": 0.022164997920810028,
+      "mean_band_a": 0.9861658536163337,
+      "mean_band_b": 1.0083308515371436,
+      "prop33_holds_fraction": 1.0,
+      "prop33_mean_gap": 0.002307185460100513,
+      "prop33_mean_bound": 1.6911613833740429,
+      "lemma32_holds_fraction": 1.0,
+      "lemma32_mean_e_w2": 0.9978656720477174,
+      "lemma32_mean_bound": 1.8718888888888887
+    }
+  ]
+}
